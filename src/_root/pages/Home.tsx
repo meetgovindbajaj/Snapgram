@@ -4,11 +4,7 @@ import { useGetRecentPosts } from "@/lib/reactQuery/queriesAndMutations";
 import { Models } from "appwrite";
 
 const Home = () => {
-  const {
-    data: posts,
-    isPending: isPostLoading,
-    isError: isErrorPosts,
-  } = useGetRecentPosts();
+  const { data: posts, isPending: isPostLoading } = useGetRecentPosts();
   // console.log(isErrorPosts);
   return (
     <div className="flex flex-1">
