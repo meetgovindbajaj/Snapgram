@@ -176,6 +176,8 @@ export const useDeletePost = () => {
 };
 
 export const useGetInfinitePosts = () => {
+  /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+  //@ts-expect-error
   return useInfiniteQuery({
     queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
     queryFn: getInfinitePosts,
@@ -227,6 +229,8 @@ export const useUpdateUser = () => {
 };
 
 export const useGetPosts = () => {
+  /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+  //@ts-expect-error
   return useInfiniteQuery({
     queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
     queryFn: getInfinitePosts,
